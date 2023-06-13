@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script type="module" src="/scripts/socket/socket.io.min.js" defer></script>
+  <script type="module" src="/scripts/socket/socket.js" defer></script>
+  <title>JBD Chat</title>
+</head>
+<body>
+  <h1>JBD Chat</h1>
+  <ul id="messages"></ul>
+  <form id="form" action="">
+    <div class="form-row">
+      <ul id="user-activity"></ul>
+    </div>
+    <div class="form-row">
+      <label for="nickname">Name</label>
+      <input id="nickname" class="input" type="text" autocomplete="off" maxlength="12">
+      <button id="connect-button" type="button">Connect</button>
+    </div>
+    <div class="form-row">
+      <input id="input" class="input" type="text" autocomplete="off" disabled>
+      <button id="input-button" disabled>Send</button>
+    </div>
+  </form>
+  <aside id="users-online">
+    <ul id="online-list"></ul>
+  </aside>
+</body>
+</html>

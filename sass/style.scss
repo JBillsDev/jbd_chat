@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background: #999;
+  padding-left: 20%;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 1px #fff solid;
+}
+
+ul {
+  li {
+    padding: 0 10px;
+    list-style: none;
+    
+    &:nth-child(odd) {
+      background: #888;
+    }
+  }
+}
+
+#form {
+  position: fixed;
+  width: 80%;
+  left: 20%;
+  right: 0;
+  bottom: 0;
+  height: 8rem;
+  padding: 5px 10px;
+  border-top: 1px #fff solid;
+
+  #input {
+    flex-grow: 1;
+  }
+
+  #nickname {
+    max-width: 110px;
+    margin-left: 6px;
+  }
+
+  #user-activity {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right:10px;
+    }
+  }
+
+  button {
+    padding: 4px 10px;
+    border-radius: 5px;
+    background: #2c8;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  
+    .input {
+      border-radius: 5px;
+      outline: none;
+      padding: 0 10px;
+    }
+    
+    ul {
+      position: relative;
+      min-height: 2rem;
+      font-size: 1.4rem;
+
+      li {
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+#users-online {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: #88a;
+}
